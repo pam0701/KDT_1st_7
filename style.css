@@ -1,0 +1,130 @@
+/* COMMON */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* { 
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #4a4a4a
+}
+
+/* HEADER */
+header{
+    background-color: #ded5fe;
+    
+}
+
+header:hover{
+    background-color: white;
+    transition: background-color 0.3s ease-in-out 0s;
+}
+
+header .inner{
+    position: relative;
+    width: 100%;
+    height: 64px;
+    padding: 7px 80px; /* 헤더 양끝 여백 */
+    margin: 0 auto;
+    display: flex;
+}
+
+/* HEADER LOGO */
+header .inner .header__logo{
+    position: absolute; /* body에는 포지션값이 주어져있으므로 body기준으로 정렬됨 */
+    top: 0; /*기준이 되는 값으로 지정 */
+    bottom: 0; /*기준이 되는 값으로 지정 */
+    margin: auto;
+    height: 32px;
+}
+
+header .inner .header__logo a{}
+
+header .inner .header__logo a img{
+    
+}
+
+/* HEADER MENU */
+header .inner .header__menu{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    left: 250px;
+    top: 0;
+    bottom: 0;
+    height: 32px;
+}
+
+header .inner .header__menu li{
+    padding: 8px 16px;
+}
+
+
+
+header .inner .header__menu li a{
+    padding: 10px;
+}
+
+header .inner .header__menu li a i{
+    margin-left: 5px;
+    transition: all 0.3s;
+}
+
+header .inner .header__menu li a i:hover{
+    transform: rotateZ(180deg);
+}
+
+
+header .inner .header__menu li a:hover{
+    background-color: #cfd4d97b;
+}
+
+
+/* HEADER BTN */
+header .inner .header__btn {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 32px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+header .inner .header__btn .header__btn__login{
+    padding: 8px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+header .inner .header__btn .header__btn__login:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header .inner .header__btn .header__btn__register{
+    padding: 8px;
+    margin-right: 180px;
+    box-sizing: border-box;
+    background-color: rgb(59, 58, 58);
+    color: white;
+    border-radius: 3px;
+    display: inline-block;
+
+}
+header .inner .header__btn .header__btn__register a{
+    vertical-align: middle;
+    color: white;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+header .inner .header__btn .header__btn__register:hover{
+    cursor: pointer;
+    background-color: rgba(115, 113, 113, 0.497);
+}
+
+
